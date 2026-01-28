@@ -11,6 +11,7 @@ export function ChatInput({ text, setText, onSend, onVoice, loading }) {
 					if (e.key === 'Enter' && !e.shiftKey) {
 						e.preventDefault()
 						onSend()
+						setText('') 
 					}
 				}}
 			/>
